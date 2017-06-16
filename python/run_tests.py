@@ -10,7 +10,7 @@ def run_tests():
     suite = loader.discover('test')
 
     print('Running Unit Tests...')
-    runner = unittest.TextTestRunner()
+    runner = unittest.TextTestRunner(None, True, 5)
     runner.run(suite)
 
     print('Running Doc Tests...')

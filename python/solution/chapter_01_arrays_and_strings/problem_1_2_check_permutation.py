@@ -7,6 +7,15 @@ Problem: 1.2 Given two strings, write a method to decide if one
 # Time complexity: O(len(s1) + len(s2))
 # Space complexity: O(len(s1) + len(s2)) or O(1) if fixed char set
 def is_permutation(s1, s2):
+    """
+        Returns a boolean which is True if each element in
+        iterable was used only once.
+
+    >>> is_permutation('abcd')
+    True
+    >>> is_permutation('aa')
+    False
+    """
     if len(s1) != len(s2):
         return False
 
